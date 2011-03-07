@@ -45,7 +45,7 @@ for (( i=0; $i < ${#tablica[@]}; i++)); do
 
 	dokument=$zm1+$zm2
 
-	echo $dokument
+#	echo $dokument
 
 	docname=$(echo $jsonfilename | sed -e 's/.json//g')
 	url="http://127.0.0.1:14018/tweets/${docname}$i/ \ "
