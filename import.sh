@@ -43,14 +43,14 @@ for (( i=0; $i < ${#tablica[@]}; i++)); do
 #	echo $zm1
 #	echo $zm2
 
-	dokument=$zm1+$zm2
+#	dokument=$zm1+$zm2
 
 	echo $dokument
 
 	docname=$(echo $jsonfilename | sed -e 's/.json//g')
 	url="http://127.0.0.1:14018/tweets/${docname}$i/ \ "
 
-#	curl -X PUT "$url" -H '"Content-Type: application/json"' -d \' ${tablica[$i]} \'
+	curl -X PUT "$url" -H '"Content-Type: application/json"' -d \' ${tablica[$i]} \'
 	
 
 done
