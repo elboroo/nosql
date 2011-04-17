@@ -51,14 +51,14 @@ module Couch
 end
 
 server= Couch::Server.new("localhost","14018")
-server.put("/tweets/","");
+server.put("/ukdata/","");
 
-plik = File.new "tweet.json"
+plik = File.new "ukdata.json"
 
 i=0
 plik.each_line { |line|
 		 # puts line 
-		  puts i
-		  server.put("/tweets/#{i}", line)
+		 # puts i
+		  server.put("/ukdata/#{i}", line)
 		  i+=1
 }
