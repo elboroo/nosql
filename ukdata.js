@@ -15,3 +15,4 @@ ddoc.views.by_tag = {
 }
 
 
+// couchapp push ukdata.js http://sigma.inf.ug.edu.pl:14018/ukdata
