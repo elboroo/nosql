@@ -15,7 +15,7 @@ ddoc.views.by_tag = {
 }
 
 
-ddoc.views.wc = {
+ddoc.views.names = {
   map: function(doc) {
     var names = doc.name.toLowerCase().split(/_/);
     for (var i = 0, len = names.length; i < len; i++) {
